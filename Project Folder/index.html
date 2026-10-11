@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>CLEAR — Transparent Food Delivery Order Tracking</title>
+  <meta name="description" content="CLEAR: An explainable, action-oriented food delivery order-tracking experience combining arrival windows, transparent delay explanations, and useful next steps.">
+  
+  <!-- Design System Style Sheets -->
+  <link rel="stylesheet" href="css/clear-tokens.css?v=2">
+  <link rel="stylesheet" href="css/clear-layout.css?v=2">
+  <link rel="stylesheet" href="css/clear-components.css?v=2">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%23174D43%22/><circle cx=%2250%22 cy=%2250%22 r=%2215%22 fill=%22%23DDEBE0%22/></svg>">
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main tracking information</a>
+
+  <!-- Main Dynamic Application Container -->
+  <div id="clear-app-root"></div>
+
+  <!-- Global Footer & Disclosure -->
+  <footer class="app-footer" role="contentinfo">
+    <div class="app-footer-inner">
+      <p>
+        <strong>CLEAR</strong> — Transparent tracking. Better choices. Built for Instructional Designer Recruitment Assignment.
+      </p>
+      <p>
+        Design Principle: <em>Reduce uncertainty by making order status understandable, explaining changes, and helping users decide what to do next.</em>
+      </p>
+      <nav class="footer-nav-links" aria-label="Project resources">
+        <a href="case-study.html" class="footer-nav-link" target="_blank">Read UX Case Study & Research Rationale</a>
+        <span>•</span>
+        <a href="test-suite.html" class="footer-nav-link" target="_blank">Run Automated QA Verification Suite</a>
+      </nav>
+      <p style="margin-top: 6px; font-size: 0.6875rem; color: #8C9E96;">
+        All order data, delivery partner details, timestamps, and locations are simulated. No live tracking integration or completed user testing is claimed.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Live Region -->
+  <div id="clear-toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Application Logic Modules -->
+  <script src="js/clear-data.js"></script>
+  <script src="js/clear-state.js"></script>
+  <script src="js/clear-ui.js"></script>
+  <script src="js/clear-app.js"></script>
+</body>
+</html>
